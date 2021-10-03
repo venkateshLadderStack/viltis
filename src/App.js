@@ -52,12 +52,13 @@ export default function App() {
               </p>
             </ContactBtn>
           ) : (
-            <GoThreeBars
-              className="m-2"
-              style={{
-                fontSize: "24px"
-              }}
-            />
+            <ContactBtn>
+              <p>
+                <Link to="/contact">
+                  <FaQuestionCircle />
+                </Link>
+              </p>
+            </ContactBtn>
           )}
         </Corner>
       </Nav>
