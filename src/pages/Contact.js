@@ -83,6 +83,14 @@ const Contact = () => {
           </Formik>
         </div>
         <div className="col-sm-12 col-md-12 col-lg-2"></div>
+        <ContactText>
+          <p>
+            Thanks for your interest in joining the syndicate. We’ll review the
+            details and get in-touch. The Analyst Syndicate is an open platform
+            for research & advisory services firms and many leading independent
+            consultants to contribute to insights and help businesses transform.
+          </p>
+        </ContactText>
       </ContactWrapper>
     </>
   );
@@ -102,4 +110,15 @@ const Head = styled.h1`
   font-weight: 700;
   text-align: center;
   margin: 50px 0px;
+`;
+
+const ContactText = styled.div`
+  text-align: center;
+  padding: 30px 30px 0px 30px;
+  color: grey;
+
+  & p {
+    font-size: 16px;
+    font-weight: 400;
+  }
 `;
