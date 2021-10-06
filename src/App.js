@@ -9,7 +9,7 @@ import {
   FaInstagram,
   FaLinkedinIn,
   FaTwitter,
-  FaQuestionCircle
+  FaQuestionCircle,
 } from "react-icons/fa";
 import { GoThreeBars } from "react-icons/go";
 
@@ -27,15 +27,7 @@ export default function App() {
   return (
     <Wrapper className="container-fluid">
       <Nav className="row">
-        <div className="col-4">
-          <Icons>
-            <FaFacebook />
-            <FaInstagram />
-            <FaTwitter />
-            <FaLinkedinIn />
-          </Icons>
-        </div>
-        <div className="col-4">
+        <div className="col-8">
           <Link to="/">
             <LogoWrapper>
               <Logo src={LogoImg} alt="" />
@@ -43,23 +35,13 @@ export default function App() {
           </Link>
         </div>
         <Corner className="col-4">
-          {width > 767 ? (
-            <ContactBtn>
-              <p>
-                <Link to="/contact">
-                  Queires <FaQuestionCircle />
-                </Link>
-              </p>
-            </ContactBtn>
-          ) : (
-            <ContactBtn>
-              <p>
-                <Link to="/contact">
-                  <FaQuestionCircle />
-                </Link>
-              </p>
-            </ContactBtn>
-          )}
+          <ContactBtn>
+            <p>
+              <Link to="/contact">
+                Queires <FaQuestionCircle />
+              </Link>
+            </p>
+          </ContactBtn>
         </Corner>
       </Nav>
       <SmallNav>
@@ -103,7 +85,7 @@ const Wrapper = styled.div`
 
 const Nav = styled.div`
   width: 100%;
-  height: 75px;
+  height: 125px;
   display: flex;
   align-items: center;
   padding: 0;
@@ -119,20 +101,22 @@ const Icons = styled.div`
 `;
 
 const LogoWrapper = styled.div`
-  text-align: center;
-  width: 100%;
+  width: 150px;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Logo = styled.img`
   width: 100%;
-  height: 75px;
+  height: 120px;
   object-fit: contain;
 `;
 
 const ContactBtn = styled.div`
   width: 150px;
-  height: 75px;
+  height: 125px;
   background: black;
   color: white;
   display: flex;
@@ -146,7 +130,7 @@ const Corner = styled.div`
   padding: 0;
   margin: 0;
   & p {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 600;
     margin-top: 10px;
   }

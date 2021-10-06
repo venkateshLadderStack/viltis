@@ -1,15 +1,23 @@
 import styled from "styled-components";
 
-const ServiceCardRight = ({ imageUrl, title, subTitle, description }) => {
+const ServiceCardRight = ({
+  imageUrl,
+  title,
+  subTitle,
+  description,
+  description2,
+  id,
+}) => {
   return (
-    <Wrapper className="row">
+    <Wrapper className="row" id={id}>
       <div className="col-sm-12 col-md-6">
         <Image src={imageUrl} alt="" />
       </div>
       <Info className="col-sm-12 col-md-6">
         <h2>{title}</h2>
-        <h3>{subTitle}</h3>
+        {subTitle && <h3>{subTitle}</h3>}
         <p>{description}</p>
+        <p>{description2}</p>
       </Info>
     </Wrapper>
   );

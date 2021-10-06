@@ -6,21 +6,57 @@ import Button from "../DS/Button";
 import JoinUs from "../components/JoinUs";
 
 const Contact = () => {
-  const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
+  const phoneRegExp =
+    /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 
   return (
     <>
       <Head>Contact Us</Head>
       <ContactWrapper className="row">
-        <div className="col-sm-12 col-md-12 col-lg-2"></div>
-        <div className="col-sm-12 col-md-12 col-lg-8">
+        <div className="col-sm-12 col-md-12 col-lg-6">
+          <div className="row">
+            <div className="col-sm-12 col-md-6">
+              <h3 className="my-4">Address</h3>
+              <p>
+                <strong>Hyderabad</strong> <br /> Address: Viltis healthcare Pvt
+                Ltd.
+                <br /> Plot No: 99,
+                <br />
+                Ganesh Nagar,Chengicherla,
+                <br /> Hyderabad- 500098
+              </p>
+
+              <p>
+                <strong>Delhi</strong> <br /> Address: Viltis healthcare Pvt
+                Ltd. <br />
+                Flat 209,
+                <br /> Ruchi Towers Chattarpur.
+                <br /> Delhi - 110074
+              </p>
+            </div>
+            <div className="col-sm-12 col-md-6">
+              <h3 className="my-4">General Information</h3>
+              <p>
+                <strong>Email Id</strong>:{" "}
+                <a href="mailto: viltishelathcare@gmail.com">
+                  viltishelathcare@gmail.com
+                </a>
+              </p>
+              <p>
+                <strong>Phone</strong>:{" "}
+                <a href="tel:+91- 9398255792"> +91- 9398255792</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="col-sm-12 col-md-12 col-lg-6">
           <Formik
             initialValues={{
               name: "",
               number: "",
               email: "",
               message: "",
-              file: ""
+              file: "",
             }}
             validationSchema={Yup.object({
               name: Yup.string()
@@ -37,7 +73,7 @@ const Contact = () => {
               message: Yup.string()
                 .min(10, "message need to be more than 10 characters")
                 .required("this field is required"),
-              file: Yup.mixed().optional()
+              file: Yup.mixed().optional(),
             })}
             onSubmit={async (values, { setSubmitting, resetForm }) => {}}
           >
@@ -82,7 +118,7 @@ const Contact = () => {
             )}
           </Formik>
         </div>
-        <div className="col-sm-12 col-md-12 col-lg-2"></div>
+
         <ContactText>
           <p>
             Thanks for your interest in joining the syndicate. We’ll review the

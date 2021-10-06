@@ -18,11 +18,20 @@ const AboutHome = () => {
           <TextWrapper>
             <H2></H2>
             <P>
-              We provide you with the best, most experienced analysts. Our
-              community gets alongside you and your organization, providing
-              alternative approaches where they fit, real-world solutions, and
-              high impact solutions. We give you insights that grow, change, and
-              challenge, and we’ll always be your cheerleader.
+              Viltis is everything you need when you think of medical &
+              healthcare services at home. We are committed to quality in
+              rendering home healthcare services for speedy patient recovery. At
+              Viltis we carefully choose people who are compassionate,
+              empathetic and easily approachable. Moreover, the services
+              provided by us are timely executed, affordable and flexible.
+            </P>
+            <P>
+              {" "}
+              Our commitment is to offer quality home-healthcare services to our
+              clients as per their needs. We make sure that our Nurses,
+              Physiotherapists, Doctors, Caretakers, or all Healthcare
+              Professionals provided by us are well-trained and specialized in
+              their respective areas.
             </P>
             <div className="m-4">
               <Link to="/about">
@@ -63,9 +72,9 @@ const SubHead = styled.h1`
 const H2 = styled.h2``;
 
 const P = styled.p`
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 30px;
 `;
 
 const TextWrapper = styled.div`
