@@ -14,7 +14,7 @@ import Ambulane from "../images/ambulace.png";
 
 const Service = () => {
   return (
-    <>
+    <div id="top">
       <div className="container">
         <div className="row">
           <div className="col-12">
@@ -130,11 +130,11 @@ const Service = () => {
         </div>
       </div>
       <JoinUs
-        text="Lorem ipsum dolor"
-        btnText="Subscribe"
-        caption="Lorem ipsum dolor Lorem ipsum dolor"
+        text="Register Today "
+        btnText="Register"
+        caption="To let our family take care of yours."
       />
-    </>
+    </div>
   );
 };
 

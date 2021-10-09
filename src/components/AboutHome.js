@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Button from "../DS/Button";
-import AboutImg from "../images/about.jpg";
+import AboutImg from "../images/about.png";
 
 const AboutHome = () => {
   return (

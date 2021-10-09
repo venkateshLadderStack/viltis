@@ -17,7 +17,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link, NavLink } from "react-router-dom";
 import Footebar from "./components/Footer";
-import LogoImg from "./images/Viltis.png";
+import LogoImg from "./images/Viltis_crop.png";
+import LogoTextImg from "./images/logoText_crop.png";
 import useWindowSize from "./hooks/useWindowSize";
 import "./styles.css";
 
@@ -31,6 +32,7 @@ export default function App() {
           <Link to="/">
             <LogoWrapper>
               <Logo src={LogoImg} alt="" />
+              <LogoText src={LogoTextImg} alt="" />
             </LogoWrapper>
           </Link>
         </div>
@@ -104,14 +106,25 @@ const LogoWrapper = styled.div`
   width: 150px;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
 
 const Logo = styled.img`
   width: 100%;
-  height: 120px;
+  height: 75px;
   object-fit: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+`;
+
+const LogoText = styled.img`
+  width: 100%;
+  height: 50px;
+  object-fit: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
 `;
 
 const ContactBtn = styled.div`

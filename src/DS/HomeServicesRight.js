@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import styled from "styled-components";
 
-const HomeServiceRight = ({ title, subTitle, imageUrl }) => {
+const HomeServiceRight = ({ title, subTitle, imageUrl, id }) => {
   return (
     <>
       <div className="row">
@@ -10,9 +11,9 @@ const HomeServiceRight = ({ title, subTitle, imageUrl }) => {
           <TextWrapper>
             <H2>{title}</H2>
             <P>{subTitle}</P>
-            <Link to="/service">
+            <HashLink to={`/service#${id}`}>
               <More>Read More</More>
-            </Link>
+            </HashLink>
           </TextWrapper>
         </div>
         <div className="col-4">
@@ -51,7 +52,7 @@ const SubHead = styled.h1`
 `;
 
 const H2 = styled.h2`
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 600;
   line-height: 40px;
   @media screen and (max-width: 767px) {
@@ -62,9 +63,9 @@ const H2 = styled.h2`
 `;
 
 const P = styled.p`
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 30px;
 
   @media screen and (max-width: 767px) {
     font-size: 16px;

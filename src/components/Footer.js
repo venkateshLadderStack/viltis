@@ -93,13 +93,13 @@ export default function Footebar() {
             <div className="col-6">
               <Address>Links</Address>
               <ServiceInfo>
-                <Link to="/">Home</Link>
+                <HashLink to="/#top">Home</HashLink>
                 <br />
-                <Link to="/about">About Us</Link>
+                <HashLink to="/about#top">About Us</HashLink>
                 <br />
-                <Link to="/service">Our Services</Link>
+                <HashLink to="/service#top">Our Services</HashLink>
                 <br />
-                <Link to="/contact">Contact Us</Link>
+                <HashLink to="/contact#top">Contact Us</HashLink>
               </ServiceInfo>
             </div>
           </div>

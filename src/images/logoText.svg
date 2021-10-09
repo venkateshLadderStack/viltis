@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2600" height="1800" viewBox="0 0 2600 1800">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-size: 12px;
+        fill: #324162;
+        font-family: Georgia;
+        font-weight: 700;
+      }
+
+      .cls-1 {
+        font-style: italic;
+      }
+    </style>
+  </defs>
+  <text id="HEALTHCARE_" data-name="HEALTHCARE " class="cls-1" transform="translate(1098.032 1284.091) scale(4.605 7.179)">HEALTHCARE</text>
+  <text id="VILTIS" class="cls-2" transform="translate(1040.473 1207.044) scale(11.935 14.642)">VILTIS</text>
+</svg>

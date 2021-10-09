@@ -10,9 +10,10 @@ const HeroLarge = () => {
         <div className="col-sm-12 col-md-4">
           <TextWrapper>
             <H1>
-              Five ways we think office <br /> work will change
+              24*7 Healthcare/ <br />
+              Services at Home
             </H1>
-            <P>Five ways we think office work will change</P>
+            <P>Taking Care of your family is our highest honour</P>
             <div className="mt-4">
               <Link to="/service">
                 <Button width="250" reverse={true}>
@@ -70,7 +71,7 @@ const Image = styled.img`
 `;
 
 const H1 = styled.h1`
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 800;
   line-height: 55px;
   white-space: nowrap;
@@ -81,7 +82,7 @@ const H1 = styled.h1`
 `;
 
 const P = styled.p`
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 26px;
   white-space: nowrap;

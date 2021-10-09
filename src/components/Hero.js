@@ -13,8 +13,8 @@ const HeroSmall = () => {
             <Image src={BgImage} alt="" />
           </ImageWrapper>
           <TextWrapper>
-            <H1>Five ways we think office work will change</H1>
-            <P>Five ways we think office work will change</P>
+            <H1>24*7 Healthcare/Services at Home</H1>
+            <P>Taking Care of your family is our highest honour</P>
             <div className="mt-4">
               <Link to="/service">
                 <Button width="300" reverse={true}>

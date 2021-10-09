@@ -10,7 +10,7 @@ const Contact = () => {
     /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 
   return (
-    <>
+    <div id="top">
       <Head>Contact Us</Head>
       <ContactWrapper className="row">
         <div className="col-sm-12 col-md-12 col-lg-6">
@@ -118,17 +118,8 @@ const Contact = () => {
             )}
           </Formik>
         </div>
-
-        <ContactText>
-          <p>
-            Thanks for your interest in joining the syndicate. We’ll review the
-            details and get in-touch. The Analyst Syndicate is an open platform
-            for research & advisory services firms and many leading independent
-            consultants to contribute to insights and help businesses transform.
-          </p>
-        </ContactText>
       </ContactWrapper>
-    </>
+    </div>
   );
 };
 export default Contact;
