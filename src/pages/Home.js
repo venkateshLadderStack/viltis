@@ -96,7 +96,7 @@ const Home = () => {
       <HomeServiceRight
         title={"Ambulance Services"}
         subTitle={
-          "We provide basic ambulance basic Ambulance, Paediatric Ambulance, ICU/Cardiac Ambulance, Outstation Ambulance, Patient Transport Vehicle and even Air Ambulance."
+          "We provide basic Ambulance, Paediatric Ambulance, ICU/Cardiac Ambulance, Outstation Ambulance, Patient Transport Vehicle and even Air Ambulance."
         }
         imageUrl={Ambulane}
         id="ambulance"
