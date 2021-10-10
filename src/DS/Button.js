@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-const Button = ({ children, handleClick, width, reverse }) => {
+const Button = ({ children, handleClick, width, reverse, type }) => {
   const [btnColor, setBtnColor] = useState(reverse ? "black" : "white");
 
   return (
@@ -11,6 +11,7 @@ const Button = ({ children, handleClick, width, reverse }) => {
       onMouseEnter={() => setBtnColor(reverse ? "white" : "black")}
       onMouseLeave={() => setBtnColor(reverse ? "black" : "white")}
       width={width}
+      type={type}
     >
       {children}
     </ButtonWrapper>

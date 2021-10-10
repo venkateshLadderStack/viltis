@@ -7,7 +7,7 @@ const JoinUs = ({ text, caption, btnText }) => {
     <Wrapper>
       <Head>{text}</Head>
       <Caption>{caption}</Caption>
-      <Link to="/service">
+      <Link to="/contact">
         <Button>{btnText}</Button>
       </Link>
     </Wrapper>

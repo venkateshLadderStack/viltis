@@ -130,9 +130,9 @@ const Contact = () => {
                 />
 
                 <div className="mt-4 d-flex justify-content-center">
-                  <button type="submit" width={"200"}>
+                  <Button type="submit" width={"200"}>
                     Send
-                  </button>
+                  </Button>
                 </div>
               </Form>
             )}
