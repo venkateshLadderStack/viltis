@@ -4,10 +4,13 @@ import { CustomField, CustomTextArea } from "../components/CustomFields";
 import * as Yup from "yup";
 import Button from "../DS/Button";
 import JoinUs from "../components/JoinUs";
+import axios from "axios";
 
 const Contact = () => {
   const phoneRegExp =
     /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
+
+  const url = "https://cocky-austin-12a4fd.netlify.app/.netlify/functions/api";
 
   return (
     <div id="top">
@@ -56,7 +59,6 @@ const Contact = () => {
               number: "",
               email: "",
               message: "",
-              file: "",
             }}
             validationSchema={Yup.object({
               name: Yup.string()
@@ -70,20 +72,32 @@ const Contact = () => {
               email: Yup.string()
                 .email("invalid email")
                 .required("email is required"),
-              message: Yup.string()
-                .min(10, "message need to be more than 10 characters")
-                .required("this field is required"),
-              file: Yup.mixed().optional(),
             })}
-            onSubmit={async (values, { setSubmitting, resetForm }) => {}}
+            onSubmit={async (values, { setSubmitting, resetForm }) => {
+              await axios
+                .post(url, values)
+                .then((res) => {
+                  console.log(res);
+                  setSubmitting(true);
+                  alert("Your Message Submitted Successfully");
+                  resetForm();
+                })
+                .catch((err) => {
+                  console.log(err, err.message);
+                  alert(err.message);
+                  setSubmitting(false);
+                });
+            }}
           >
-            {() => (
+            {({ values, setFieldValue }) => (
               <Form>
                 <CustomField
                   type="text"
                   placeholder="Your Name"
                   name="name"
                   label="Full Name"
+                  value={values.name}
+                  onChange={(e) => setFieldValue("name", e.target.value)}
                 />
 
                 <CustomField
@@ -91,6 +105,8 @@ const Contact = () => {
                   placeholder="Mobile number"
                   name="number"
                   label="Mobile"
+                  value={values.number}
+                  onChange={(e) => setFieldValue("number", e.target.value)}
                 />
 
                 <CustomField
@@ -98,6 +114,8 @@ const Contact = () => {
                   placeholder="Your Email"
                   name="email"
                   label="E-mail"
+                  value={values.email}
+                  onChange={(e) => setFieldValue("email", e.target.value)}
                 />
 
                 <CustomTextArea
@@ -107,12 +125,14 @@ const Contact = () => {
                   rows="3"
                   placeholder="Enter Your Message"
                   label="Message"
+                  value={values.message}
+                  onChange={(e) => setFieldValue("message", e.target.value)}
                 />
 
                 <div className="mt-4 d-flex justify-content-center">
-                  <Button type="submit" width={"200"}>
+                  <button type="submit" width={"200"}>
                     Send
-                  </Button>
+                  </button>
                 </div>
               </Form>
             )}
