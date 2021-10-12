@@ -21,12 +21,34 @@ import LogoImg from "./images/Viltis_crop.png";
 import LogoTextImg from "./images/logoTextEdit.png";
 import useWindowSize from "./hooks/useWindowSize";
 import "./styles.css";
+import { Helmet } from "react-helmet";
 
 export default function App() {
   const { width } = useWindowSize();
 
   return (
     <Wrapper className="container-fluid">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Viltis Healthcare Pvt. Ltd.</title>
+        <link rel="canonical" href="https://viltishealthcare.com/" />
+        <meta
+          name="description"
+          content="Viltis is committed to quality in rendering home healthcare services for speedy patient recovery and We wish to create the experience of warmth,safety & love for your dear ones."
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Viltis Healthcare Pvt. Ltd." />
+        <meta
+          property="og:description"
+          content="Viltis is committed to quality in rendering home healthcare services for speedy patient recovery and We wish to create the experience of warmth,safety & love for your dear ones."
+        />
+        <meta property="og:image" content={LogoImg} />
+        <meta property="og:url" content="https://viltishealthcare.com/" />
+
+        <meta property="og:site_name" content="Viltis Healthcare Pvt. Ltd." />
+      </Helmet>
       <Nav className="row">
         <div className="col-8">
           <Link to="/">
