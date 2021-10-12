@@ -21,8 +21,8 @@ const Contact = () => {
             <div className="col-sm-12 col-md-6">
               <h3 className="my-4">Address</h3>
               <p>
-                <strong>Hyderabad</strong> <br /> Address: Viltis healthcare Pvt
-                Ltd.
+                <strong>Hyderabad</strong> <br /> Address: Viltis Healthcare
+                Pvt. Ltd.
                 <br /> Plot No: 99,
                 <br />
                 Ganesh Nagar,Chengicherla,
@@ -30,7 +30,7 @@ const Contact = () => {
               </p>
 
               <p>
-                <strong>Delhi</strong> <br /> Address: Viltis healthcare Pvt
+                <strong>Delhi</strong> <br /> Address: Viltis Healthcare Pvt.
                 Ltd. <br />
                 Flat 209,
                 <br /> Ruchi Towers Chattarpur.
@@ -39,7 +39,11 @@ const Contact = () => {
             </div>
             <div className="col-sm-12 col-md-6">
               <h3 className="my-4">General Information</h3>
-              <p>
+              <p
+                style={{
+                  whiteSpace: "nowrap",
+                }}
+              >
                 <strong>Email Id</strong>:{" "}
                 <a href="mailto: viltishelathcare@gmail.com">
                   viltishelathcare@gmail.com
@@ -47,7 +51,17 @@ const Contact = () => {
               </p>
               <p>
                 <strong>Phone</strong>:{" "}
-                <a href="tel:+91- 9398255792"> +91- 9398255792</a>
+                <a href="tel:+919381951938">+91-9381951938</a>
+                <br />
+                <a
+                  style={{
+                    paddingLeft: "60px",
+                  }}
+                  href="tel:+919346695760"
+                >
+                  {" "}
+                  +91-9346695760
+                </a>
               </p>
             </div>
           </div>

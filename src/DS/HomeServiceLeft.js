@@ -56,10 +56,13 @@ const H2 = styled.h2`
   font-size: 22px;
   font-weight: 600;
   line-height: 40px;
+
   @media screen and (max-width: 767px) {
     font-size: 18px;
     font-weight: 600;
     line-height: 20px;
+    text-align: start;
+    align-self: flex-start;
   }
 `;
 

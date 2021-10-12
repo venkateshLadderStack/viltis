@@ -10,7 +10,7 @@ const HeroLarge = () => {
         <div className="col-sm-12 col-md-4">
           <TextWrapper>
             <H1>
-              24*7 Healthcare/ <br />
+              24*7 Healthcare <br />
               Services at Home
             </H1>
             <P>Taking Care of your family is our highest honour</P>

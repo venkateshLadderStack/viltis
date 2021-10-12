@@ -58,7 +58,7 @@ const Home = () => {
       />
       <Line />
       <HomeServiceRight
-        title={"Home Nursing Services."}
+        title={"Home Nursing Services"}
         subTitle={
           "The care provided to the patient at the hospital can now be efficiently provided at home, this is called a Home Nursing Service. Patients during recovery who have gone through trauma require specialized care for the long/short term."
         }

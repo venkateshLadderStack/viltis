@@ -16,13 +16,12 @@ export default function Footebar() {
         <div className="col-sm-12 col-md-6 col-lg-4 my-4">
           <Brand>
             <p>VILTIS</p>
-            Healthcare Pvt. Ltd
+            HEALTHCARE PVT. LTD.
           </Brand>
           <Info>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
+            Viltis is committed to quality in rendering home healthcare services
+            for speedy patient recovery and We wish to create the experience of
+            warmth,safety & love for your dear ones.
           </Info>
           <Icons>
             <FaFacebook />
@@ -34,7 +33,7 @@ export default function Footebar() {
         <div className="col-sm-12 col-md-6 col-lg-4 my-4 d-flex flex-column justify-content-center aligm-items-center">
           <Address>Contact</Address>
           <AddressInfo>
-            <strong>Hyderabad</strong> <br /> Address: Viltis healthcare Pvt
+            <strong>Hyderabad</strong> <br /> Address: Viltis Healthcare Pvt.
             Ltd.
             <br /> Plot No: 99,
             <br />
@@ -42,7 +41,7 @@ export default function Footebar() {
             <br /> Hyderabad- 500098
             <br />
             <br />
-            <strong>Delhi</strong> <br /> Address: Viltis healthcare Pvt Ltd.{" "}
+            <strong>Delhi</strong> <br /> Address: Viltis Healthcare Pvt. Ltd.{" "}
             <br />
             Flat 209,
             <br /> Ruchi Towers Chattarpur.
@@ -50,12 +49,22 @@ export default function Footebar() {
             <br />
             <br />
             <strong>Email Id</strong>:{" "}
-            <a href="mailto: viltishelathcare@gmail.com">
-              viltishelathcare@gmail.com
+            <a href="mailto: viltishealthcare@gmail.com">
+              viltishealthcare@gmail.com
             </a>
             <br />
             <strong>Phone</strong>:{" "}
-            <a href="tel:+91- 9398255792"> +91- 9398255792</a>
+            <a href="tel:+919381951938"> +91-9381951938</a>
+            <br />
+            <a
+              style={{
+                paddingLeft: "53px",
+              }}
+              href="tel:+919346695760"
+            >
+              {" "}
+              +91-9346695760
+            </a>
           </AddressInfo>
         </div>
         <div className="col-sm-12 col-md-6 col-lg-4">
@@ -87,7 +96,7 @@ export default function Footebar() {
                   Medical Equipments
                 </HashLink>
                 <br />
-                <HashLink to="/service#ambulance">Ambulance</HashLink>
+                <HashLink to="/service#ambulance">Ambulance Services</HashLink>
               </ServiceInfo>
             </div>
             <div className="col-6">
@@ -105,9 +114,7 @@ export default function Footebar() {
           </div>
         </div>
         <div className="col-12 text-center">
-          <Copy>
-            copyright &copy;2021. Viltis Health Group. All rights reserved.
-          </Copy>
+          <Copy>@2021 All Rights Reserved. Viltis Healthcare Pvt. Ltd.</Copy>
         </div>
       </Footer>
     </>

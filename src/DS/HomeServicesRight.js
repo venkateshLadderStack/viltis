@@ -60,6 +60,7 @@ const H2 = styled.h2`
     font-size: 18px;
     font-weight: 600;
     line-height: 20px;
+    align-self: flex-start;
   }
 `;
 
@@ -93,4 +94,8 @@ const More = styled.div`
   font-weight: 600;
   text-decoration-line: underline;
   color: black;
+  @media screen and (max-width: 767px) {
+    text-align: start;
+    align-self: flex-start;
+  }
 `;

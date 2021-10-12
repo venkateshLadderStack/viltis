@@ -25,22 +25,23 @@ const Wrapper = styled.div`
 
 const Title = styled.div`
   color: #fff;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 600;
 
   @media screen and (max-width: 767px) {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
   }
 `;
 
 const Description = styled.div`
   color: #fff;
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
 
   @media screen and (max-width: 767px) {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 300;
   }
 `;

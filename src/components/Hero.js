@@ -13,7 +13,7 @@ const HeroSmall = () => {
             <Image src={BgImage} alt="" />
           </ImageWrapper>
           <TextWrapper>
-            <H1>24*7 Healthcare/Services at Home</H1>
+            <H1>24*7 Healthcare Services at Home</H1>
             <P>Taking Care of your family is our highest honour</P>
             <div className="mt-4">
               <Link to="/service">

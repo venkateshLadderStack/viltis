@@ -18,7 +18,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Link, NavLink } from "react-router-dom";
 import Footebar from "./components/Footer";
 import LogoImg from "./images/Viltis_crop.png";
-import LogoTextImg from "./images/logoText_crop.png";
+import LogoTextImg from "./images/logoTextEdit.png";
 import useWindowSize from "./hooks/useWindowSize";
 import "./styles.css";
 
