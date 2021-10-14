@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const TestimonialCard = ({ imageUrl, title, subTitle }) => {
+const TestimonialCard = ({ imageUrl, title, subTitle, profession }) => {
   return (
     <>
       <TestWrapper>
@@ -13,7 +13,11 @@ const TestimonialCard = ({ imageUrl, title, subTitle }) => {
           </div>
           <div className="col-sm-12 col-md-8">
             <TextWrapper>
-              <H2>{title}</H2>
+              <div style={{ display: "flex" }}>
+                <H2>{title}</H2>
+                <P>{profession}</P>
+              </div>
+
               <P>{subTitle}</P>
             </TextWrapper>
           </div>
@@ -47,6 +51,7 @@ const H2 = styled.h2`
   font-size: 30px;
   font-weight: 600;
   line-height: 40px;
+  margin-right: 15px;
 `;
 
 const P = styled.p`
