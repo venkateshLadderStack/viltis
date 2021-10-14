@@ -15,7 +15,7 @@ const TestimonialCard = ({ imageUrl, title, subTitle, profession }) => {
             <TextWrapper>
               <div style={{ display: "flex" }}>
                 <H2>{title}</H2>
-                <P>{profession}</P>
+                <PP>{profession}</PP>
               </div>
 
               <P>{subTitle}</P>
@@ -52,6 +52,12 @@ const H2 = styled.h2`
   font-weight: 600;
   line-height: 40px;
   margin-right: 15px;
+`;
+
+const PP = styled.p`
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 40px;
 `;
 
 const P = styled.p`

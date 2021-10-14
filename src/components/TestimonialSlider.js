@@ -22,7 +22,7 @@ const TestimaonialSlider = () => {
           imageUrl={
             "https://assets.letsendorse.com/le/1590039568_IpnzXqtVfTHQrhidezku_15900395680192/2020/05/22/STIaQRtxyWFVOatRfvV15901544920338.png"
           }
-          title={"Krishna Chandra - "}
+          title={"Krishna Chandra"}
           profession={"Business Professional"}
           subTitle={
             "Attention given by the staff is good. I am impressed and feel I can refer any patient to Viltis Healthcare."
@@ -32,7 +32,7 @@ const TestimaonialSlider = () => {
           imageUrl={
             "https://assets.letsendorse.com/le/1590039568_IpnzXqtVfTHQrhidezku_15900395680192/2020/05/22/STIaQRtxyWFVOatRfvV15901544920338.png"
           }
-          title={"Namrata Shilony- "}
+          title={"Namrata Shilony"}
           profession={"IT Professional"}
           subTitle={
             "Viltils has been very helpful and we are very happy under viltis's care."
@@ -42,7 +42,7 @@ const TestimaonialSlider = () => {
           imageUrl={
             "https://assets.letsendorse.com/le/1590039568_IpnzXqtVfTHQrhidezku_15900395680192/2020/05/22/STIaQRtxyWFVOatRfvV15901544920338.png"
           }
-          title={"Manohar Adani- "}
+          title={"Manohar Adani"}
           profession={"Retired Employee"}
           subTitle={
             "Excellent services. We are very  much satisfied with the services. I thank the Viltis Team."
@@ -52,7 +52,7 @@ const TestimaonialSlider = () => {
           imageUrl={
             "https://assets.letsendorse.com/le/1590039568_IpnzXqtVfTHQrhidezku_15900395680192/2020/05/22/STIaQRtxyWFVOatRfvV15901544920338.png"
           }
-          title={"Sneha Sejwal- "}
+          title={"Sneha Sejwal"}
           profession={"Working Professional"}
           subTitle={"Great services ! They are humble, professional & Caring."}
         />
