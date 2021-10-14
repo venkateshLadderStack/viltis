@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Button from "../DS/Button";
+import BgImage from "../images/hero_large.jpg";
 
 const HeroLarge = () => {
   return (
@@ -32,10 +33,7 @@ const HeroLarge = () => {
         </div>
         <div className="col-sm-12 col-md-8">
           <ImageWrapper>
-            <Image
-              src="https://ichef.bbci.co.uk/news/976/cpsprodpb/A362/production/_120562814_officecovid.jpg"
-              alt=""
-            />
+            <Image src={BgImage} alt="" />
           </ImageWrapper>
         </div>
       </div>

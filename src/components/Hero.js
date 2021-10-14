@@ -17,14 +17,14 @@ const HeroSmall = () => {
             <P>Taking Care of your family is our highest honour</P>
             <div className="mt-4">
               <Link to="/service">
-                <Button width="300" reverse={true}>
+                <Button width="280" reverse={true}>
                   View Services
                 </Button>
               </Link>
             </div>
             <div className="mt-2">
               <Link to="/about">
-                <Button width="300" reverse={false}>
+                <Button width="280" reverse={false}>
                   Our Research
                 </Button>
               </Link>

@@ -18,32 +18,38 @@ const TestimaonialSlider = () => {
     <Wrapper>
       <Slider {...settings}>
         <TestimonialCard
-          imageUrl={Profile}
-          title={"Meet Mr. John Cena, CEO of Nothing #1"}
+          imageUrl={
+            "https://assets.letsendorse.com/le/1590039568_IpnzXqtVfTHQrhidezku_15900395680192/2020/05/22/STIaQRtxyWFVOatRfvV15901544920338.png"
+          }
+          title={"Krishna Chnadra - Business Professional"}
           subTitle={
-            "Artificial intelligence, machine learning, robotics, drones and automation go together like peas and carrots."
+            "Attention given by the staff is good. I am impressed and feel I can refer any patient to Viltis Healthcare."
           }
         />
         <TestimonialCard
-          imageUrl={Profile}
-          title={"Meet Mr. John Cena, CEO of Nothing #1"}
+          imageUrl={
+            "https://assets.letsendorse.com/le/1590039568_IpnzXqtVfTHQrhidezku_15900395680192/2020/05/22/STIaQRtxyWFVOatRfvV15901544920338.png"
+          }
+          title={"Namrata Shilony- IT Professional"}
           subTitle={
-            "Artificial intelligence, machine learning, robotics, drones and automation go together like peas and carrots."
+            "Viltils has been very helpful and we are very happy under viltis's care."
           }
         />
         <TestimonialCard
-          imageUrl={Profile}
-          title={"Meet Mr. John Cena, CEO of Nothing #1"}
+          imageUrl={
+            "https://assets.letsendorse.com/le/1590039568_IpnzXqtVfTHQrhidezku_15900395680192/2020/05/22/STIaQRtxyWFVOatRfvV15901544920338.png"
+          }
+          title={"Manohar Adani- Retired Employee"}
           subTitle={
-            "Artificial intelligence, machine learning, robotics, drones and automation go together like peas and carrots."
+            "Excellent services. We are very  much satisfied with the services. I thank the Viltis Team."
           }
         />
         <TestimonialCard
-          imageUrl={Profile}
-          title={"Meet Mr. John Cena, CEO of Nothing #1"}
-          subTitle={
-            "Artificial intelligence, machine learning, robotics, drones and automation go together like peas and carrots."
+          imageUrl={
+            "https://assets.letsendorse.com/le/1590039568_IpnzXqtVfTHQrhidezku_15900395680192/2020/05/22/STIaQRtxyWFVOatRfvV15901544920338.png"
           }
+          title={"Sneha Sejwal- Working Professional"}
+          subTitle={"Great services ! They are humble, professional & Caring."}
         />
       </Slider>
     </Wrapper>
