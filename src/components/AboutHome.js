@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import styled from "styled-components";
 import Button from "../DS/Button";
-import AboutImg from "../images/about.png";
+import AboutImg from "../images/hero_about.jpg";
 
 const AboutHome = () => {
   return (
@@ -34,9 +35,9 @@ const AboutHome = () => {
               their respective areas.
             </P>
             <div className="m-4">
-              <Link to="/about">
+              <HashLink to="/about#top">
                 <Button width={"200"}>Read More</Button>
-              </Link>
+              </HashLink>
             </div>
           </TextWrapper>
         </div>
@@ -59,8 +60,9 @@ const ImageWrapper = styled.div`
 const Image = styled.img`
   width: 100%;
   height: 100%;
-  max-height: 400px;
-  object-fit: contain;
+  max-height: 500px;
+  object-fit: cover;
+  object-position: center;
 `;
 
 const SubHead = styled.h1`

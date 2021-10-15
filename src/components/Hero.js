@@ -9,12 +9,11 @@ const HeroSmall = () => {
     <HeroWrapper>
       <div className="row">
         <div className="col-12">
-          <ImageWrapper>
-            <Image src={BgImage} alt="" />
-          </ImageWrapper>
           <TextWrapper>
             <H1>24*7 Healthcare Services at Home</H1>
             <P>Taking Care of your family is our highest honour</P>
+          </TextWrapper>
+          <ButtonWrapper>
             <div className="mt-4">
               <Link to="/service">
                 <Button width="280" reverse={true}>
@@ -29,7 +28,10 @@ const HeroSmall = () => {
                 </Button>
               </Link>
             </div>
-          </TextWrapper>
+          </ButtonWrapper>
+          <ImageWrapper>
+            <Image src={BgImage} alt="" />
+          </ImageWrapper>
         </div>
       </div>
     </HeroWrapper>
@@ -51,7 +53,20 @@ const ImageWrapper = styled.div`
 const TextWrapper = styled.div`
   padding: 0px 15px;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
+  z-index: 999;
+  position: absolute;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+`;
+
+const ButtonWrapper = styled.div`
+  padding: 0px 15px;
+  width: 100%;
+  /* height: 100%; */
   z-index: 999;
   position: absolute;
   bottom: 30px;

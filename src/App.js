@@ -50,7 +50,7 @@ export default function App() {
         <meta property="og:site_name" content="Viltis Healthcare Pvt. Ltd." />
       </Helmet>
       <Nav className="row">
-        <div className="col-8">
+        <div className=" col-8">
           <Link to="/">
             <LogoWrapper>
               <Logo src={LogoImg} alt="" />
@@ -58,6 +58,7 @@ export default function App() {
             </LogoWrapper>
           </Link>
         </div>
+        {width > 786 && <P>Taking Care Of Your Family Is Our Highest Honour</P>}
         <Corner className="col-4">
           <ContactBtn>
             <p>
@@ -105,6 +106,7 @@ const Wrapper = styled.div`
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  position: relative;
 `;
 
 const Nav = styled.div`
@@ -122,6 +124,17 @@ const Icons = styled.div`
   justify-content: space-around;
   align-items: center;
   font-size: 20px;
+`;
+
+const P = styled.p`
+  font-size: 38px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  line-height: 35px;
+  text-align: center;
+  white-space: nowrap;
+  position: absolute;
+  color: #705290;
 `;
 
 const LogoWrapper = styled.div`

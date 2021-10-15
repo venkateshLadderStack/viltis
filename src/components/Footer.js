@@ -24,10 +24,25 @@ export default function Footebar() {
             warmth,safety & love for your dear ones.
           </Info>
           <Icons>
-            <FaFacebook />
-            <FaInstagram />
-            <FaTwitter />
-            <FaLinkedinIn />
+            <a
+              href="https://www.facebook.com/ViltisHealthcare/?notif_id=1634280007597511&notif_t=aymt_create_page_post_with_ctwa_cta_notif&ref=notif"
+              target="_blank"
+            >
+              <FaFacebook />
+            </a>
+            <a
+              href="https://www.instagram.com/viltishealthcare/"
+              target="_blank"
+            >
+              <FaInstagram />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/mwlite/company/viltis-healthcare-pvt-ltd"
+              target="_blank"
+            >
+              <FaLinkedinIn />
+            </a>
           </Icons>
         </div>
         <div className="col-sm-12 col-md-6 col-lg-4 my-4 d-flex flex-column justify-content-center aligm-items-center">
@@ -184,7 +199,13 @@ const Icons = styled.div`
   color: white;
   display: flex;
   justify-content: space-around;
-  font-size: 20px;
+  font-size: 34px;
+  cursor: pointer;
+
+  & a {
+    color: white;
+    text-decoration: none;
+  }
 `;
 
 const Links = styled.div`

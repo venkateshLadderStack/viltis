@@ -45,8 +45,8 @@ const Contact = () => {
                 }}
               >
                 <strong>Email Id</strong>:{" "}
-                <a href="mailto: viltishelathcare@gmail.com">
-                  viltishelathcare@gmail.com
+                <a href="mailto: viltishealthcare@gmail.com">
+                  viltishealthcare@gmail.com
                 </a>
               </p>
               <p>

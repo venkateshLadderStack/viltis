@@ -14,7 +14,7 @@ const HeroLarge = () => {
               24*7 Healthcare <br />
               Services at Home
             </H1>
-            <P>Taking Care of your family is our highest honour</P>
+
             <div className="mt-4">
               <Link to="/service">
                 <Button width="250" reverse={true}>
