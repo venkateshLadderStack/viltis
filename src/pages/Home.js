@@ -101,7 +101,7 @@ const Home = () => {
         imageUrl={Ambulane}
         id="ambulance"
       />
-      <TestimaonialSlider />
+      {/* <TestimaonialSlider /> */}
       <JoinUs
         text="Register Today "
         btnText="Register"
