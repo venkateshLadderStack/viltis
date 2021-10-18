@@ -58,7 +58,9 @@ export default function App() {
             </LogoWrapper>
           </Link>
         </div>
-        {width > 786 && <P>Taking Care Of Your Family Is Our Highest Honour</P>}
+        {width > 786 && (
+          <P>" Taking Care Of Your Family Is Our Highest Honour "</P>
+        )}
         <Corner className="col-4">
           <ContactBtn>
             <p>
@@ -127,14 +129,15 @@ const Icons = styled.div`
 `;
 
 const P = styled.p`
-  font-size: 38px;
+  font-size: 28px;
   font-family: "Times New Roman", Times, serif;
   font-weight: 700;
   line-height: 35px;
   text-align: center;
-  white-space: nowrap;
   position: absolute;
   color: #705290;
+  width: 60vw;
+  margin-left: 20vw;
 `;
 
 const LogoWrapper = styled.div`
@@ -148,7 +151,7 @@ const LogoWrapper = styled.div`
 
 const Logo = styled.img`
   width: 100%;
-  height: 75px;
+  height: 85px;
   object-fit: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -156,7 +159,7 @@ const Logo = styled.img`
 
 const LogoText = styled.img`
   width: 100%;
-  height: 50px;
+  height: 40px;
   object-fit: contain;
   background-position: center center;
   background-repeat: no-repeat;
