@@ -147,6 +147,11 @@ const LogoWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 `;
 
 const Logo = styled.img`
@@ -155,6 +160,11 @@ const Logo = styled.img`
   object-fit: contain;
   background-position: center center;
   background-repeat: no-repeat;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 `;
 
 const LogoText = styled.img`
@@ -163,6 +173,11 @@ const LogoText = styled.img`
   object-fit: contain;
   background-position: center center;
   background-repeat: no-repeat;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 `;
 
 const ContactBtn = styled.div`
